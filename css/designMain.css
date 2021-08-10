@@ -1,0 +1,202 @@
+@font-face {
+  font-family: newFont;
+  src: url("/font/OratorStd.otf");
+}
+
+body {
+  padding: 0;
+  font-family: newFont;
+
+  color: aliceblue;
+  background-color: black;
+  font-family: newFont;
+}
+
+#site_wrap {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    636px
+    636px
+    1fr;
+
+  grid-template-rows: 74px 2250px;
+
+  grid-template-areas:
+    "header header header header"
+    " hero_area hero_area hero_area hero_area";
+   
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 25px;
+  overflow: hidden;
+  text-align: center;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  list-style: none;
+  color: white;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+}
+
+@keyframes animate {
+  0% {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0.6752136752136753) 49%,
+      rgba(0, 0, 0, 1) 64%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    background-size: 80%;
+  }
+  100% {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0.6752136752136753) 49%,
+      rgba(0, 0, 0, 1) 64%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    background-size: 500%;
+  }
+}
+
+.header {
+  grid-area: header;
+  background-color: rgb(0, 0, 0);
+
+  border-color: black;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  font-size: 20px;
+  animation: animate 3s linear;
+  animation-fill-mode: forwards;
+}
+
+.header .name {
+  display: flex;
+  align-items: inherit;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.header .nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.header .nav a {
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 50em;
+  color: white;
+  padding: 15px 30px;
+  margin: 0 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.header .main_nav a:hover {
+  border-bottom: 0.125px solid rgb(255, 4, 4);
+  color: rgb(255, 255, 255);
+}
+.header .name:hover {
+  color: rgb(250, 23, 23);
+}
+
+.header .logo {
+  margin-left: 13px;
+  border: 1px;
+
+  width: 90px;
+  height: 130px;
+  padding-right: 10px;
+}
+
+.hero_area{
+    text-decoration: none;
+    grid-area: hero_area;
+    text-align: center;
+    background-image: url(/imgs/Space-Like.jpg);
+    background-size: cover;
+    
+
+}
+.hero_area a{
+  text-decoration:underline;
+  font-size: large;
+  border: 1px solid black;
+  border-radius: 10.3px;
+  margin-left: 5em;
+  margin-right: 5em;
+  color: black;
+  background-color: aliceblue;
+  display: inline-flex;
+  margin-top: 2em;
+  padding:  16px 100px 16px 100px;
+  
+}
+
+
+
+.hero_area a:hover{
+  background-color: rgba(0, 0, 0, 0.26);
+  border-bottom: 1px solid rgb(248, 14, 14);
+
+  
+}
+
+
+
+@media screen and (max-width: 480px) {
+  #site_wrap {
+    background-color: black;
+    grid-template-areas:
+      "header header header header"
+      " hero_area hero_area hero_area hero_area"
+      ;
+  }
+}
+/*-------Galaxy S6-------*/
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
