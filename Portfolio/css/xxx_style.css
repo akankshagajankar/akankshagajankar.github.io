@@ -1,0 +1,322 @@
+:root {
+  --clr-neon: hsl(0, 100%, 100%);
+  --clr-bg: hsl(323 21% 16%);
+}
+
+*,
+* ::before,
+*::after {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: newFont;
+  src: url("/font/OratorStd.otf");
+}
+
+body {
+  padding: 0;
+  font-family: newFont;
+
+  color: aliceblue;
+  background-color: black;
+  font-family: newFont;
+}
+
+#site_wrap {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    636px
+    636px
+    1fr;
+
+  grid-template-rows: 74px 3750px;
+
+  grid-template-areas:
+    "header header header header"
+    " whole whole whole whole";
+}
+    
+
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 25px;
+  overflow: hidden;
+  text-align: center;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  list-style: none;
+  color: white;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+}
+
+@keyframes animate {
+  0% {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0.6752136752136753) 49%,
+      rgba(0, 0, 0, 1) 64%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    background-size: 80%;
+  }
+  100% {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0.6752136752136753) 49%,
+      rgba(0, 0, 0, 1) 64%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    background-size: 500%;
+  }
+}
+
+.header {
+  grid-area: header;
+  background-color: rgb(0, 0, 0);
+
+  border-color: black;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  font-size: 20px;
+  animation: animate 3s linear;
+  animation-fill-mode: forwards;
+}
+
+.header .name {
+  display: flex;
+  align-items: inherit;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.header .nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.header .nav a {
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 50em;
+  color: white;
+  padding: 15px 30px;
+  margin: 0 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.header .main_nav a:hover {
+  border-bottom: 0.125px solid rgb(255, 4, 4);
+  color: rgb(255, 255, 255);
+}
+.header .name:hover {
+  color: rgb(250, 23, 23);
+}
+
+.header .logo {
+  margin-left: 13px;
+  border: 1px;
+
+  width: 90px;
+  height: 130px;
+  padding-right: 10px;
+}
+
+
+  
+
+.whole{
+     grid-area: whole;
+
+}
+
+/*Hero Area 1*/
+.whole .hero_area_1 {
+    border: 5px solid rgb(0, 0, 0);
+    border-radius:5px;
+   
+}
+.whole .hero_area_1 img{
+    background-size: cover;
+}
+
+
+/*Hero Area 2*/
+
+
+.whole .hero_area_2 {
+ 
+  background-color: rgb(21, 102, 75);
+  border: 10px;
+  border-color: black;
+  border-radius: 20px;
+  color: black;
+  background-image: url("/imgs/Space-Like.jpg");
+  background-size: cover;
+  background-position: 0px;
+}
+
+ .whole .hero_area_2 h1 {
+  display: grid;
+  background-color: aliceblue;
+  border: 1px solid black;
+}
+
+.whole .hero_area_2 .text1 {
+  margin-top: 60px;
+  margin-right: 600px;
+  margin-left: 80px;
+}
+
+.whole .hero_area_2 .text2 {
+  margin-top: 190px;
+  margin-right: 800px;
+  margin-left: 890px;
+}
+
+.whole .hero_area_2 .text3 {
+  margin-top: 0px;
+  margin-right: 500px;
+  margin-left: 100px;
+}
+
+/*Hero Area 3*/
+
+ .whole .hero_area_3 {
+  
+  background-color: rgb(6, 61, 43);
+  border: 1px;
+  border-color: black;
+  border-radius: 20px;
+  color: black;
+  background-image: url("/imgs/Porta.jpg");
+  background-size: cover;
+}
+
+.hero_area_3 .buttons a {
+  text-decoration: none;
+  display: -ms-inline-grid;
+  margin: 0 16px;
+  border: 2px solid white;
+  border-radius: 0em;
+  color: white;
+  padding: 25px 80px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 50px;
+  font-size: xx-large;
+}
+
+ .hero_area_3 .design-button a,
+ .hero_area_3 .art-button a,
+ .hero_area_3 .writing-button a {
+  margin-top: 450px;
+  margin-left: 220px;
+  color: var(--clr-neon);
+  cursor: pointer;
+  border: var(--clr-neon) 0.1em solid;
+  border-radius: 0.5em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100%/0.3), 0 0 1em currentColor;
+
+  box-shadow: 0 0 1em 0 var(--clr-bg), inset 0 0 1em 0 var(--clr-bg);
+  position: relative;
+  background-color: rgb(0, 12, 22);
+}
+
+ .design-button a::before,
+.art-button a::before,
+ .writing-button a::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  background: var(--clr-neon);
+  top: 70%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1.1em) rotateX(380deg) scale(1, 0.23);
+  filter: blur(1em);
+  opacity: 0.5;
+}
+ .design-button a::after,
+ .art-button a::after,
+ .writing-button a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  box-shadow: 0 0 5em 1em var(--clr-neon), inset 0 0 1em 0 var(--clr-neon);
+  opacity: 0;
+  transition: opacity 100ms linear;
+  background-color: var(--clr-neon);
+  z-index: -1;
+}
+
+ .design-button a:hover::after,
+ .design-button a:focus::after,
+ .art-button a:hover::after,
+ .art-button a:focus::after,
+ .writing-button a:focus::after {
+  opacity: 1;
+}
+
+ .design-button a:hover::before,
+ .art-button a:hover::before,
+ .writing-button a:hover::before {
+  opacity: 1;
+}
+
+ .design-button a:hover,
+ .design-button a:focus,
+ .art-button a:hover,
+ .art-button a:focus,
+ .writing-button a:hover,
+ .writing-button a:hover {
+  background-color: var(--clr-neon);
+  color: var(--clr-bg);
+  text-shadow: none;
+  text-shadow: 0 0 1em hsl(0, 10%, 0%);
+  box-shadow: 0 0 5em 1em var(--clr-neon), inset 0 0 1em 0 var(--clr-neon);
+  border: var(--clr-bg) 0.1em solid;
+}
+
+.hero_area_3 .art-button a {
+  margin-top: 420px;
+  margin-left: 850px;
+}
+
+ .hero_area_3 .writing-button a {
+  margin-top: 380px;
+  margin-left: 220px;
+}
+
+@media screen and (max-width: 480px) {
+  #site_wrap {
+    background-color: black;
+    grid-template-areas:
+      "header header header header"
+      "hero_area_1 hero_area_1 hero_area_1 hero_area_1"
+      "hero_area_2 hero_area_2 hero_area_2 hero_area_2"
+      "hero_area_3 hero_area_3 hero_area_3 hero_area_3";
+  }
+}

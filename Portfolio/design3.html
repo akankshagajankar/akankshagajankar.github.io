@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design 3</title>
+    <link rel="stylesheet" href="/css/designsslide.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body >
+
+    <div id="site_wrap" >
+        <!-----------------Header Area------------------>
+        <div class="header">
+
+            <a class="name" href="/index.html" ><img class="logo" src="./imgs/LOGO for Portfolio.png"
+                    alt="logo">Akanksha</a>
+
+            <nav >
+
+                <ul class="main_nav">
+                    <li> <a href="/designMain.html">Designs</a></li>
+                    <li><a href="/art.html">Art</a></li>
+                    <li><a href="/writing.html">Writing</a></li>
+                    <li><a href="/about.html">About</a></li>
+
+
+                    
+                </ul>
+            </nav>
+
+        </div>
+
+        <!-----------------Design Area------------------>
+        <div class="hero_area" >
+            
+
+        
+            <a href="/design1.html">Design 1</a>
+        <a href="/Design2.html" >Design 2</a>
+        <a href="/design3.html" class="active">Design 3</a>
+
+            <h1 class="finalyearproject">
+                <h3 class="ps" data-aos="fade-up-left">P.S this is my first ever design I ever made for a final year college project</h3>
+                <img src="/Design3/Homepage.jpg" alt="1" data-aos="fade-up-right">
+                <img src="/Design3/Testing Page.jpg" alt="2" data-aos="fade-up-left">
+                <img src="/Design3/Operations 1.jpg" alt="3" data-aos="fade-up-right">
+                <img src="/Design3/Loading.jpg" alt="4" data-aos="fade-up-left">
+                <img src="/Design3/View Results.jpg" alt="5" data-aos="fade-up-right">
+                <img src="/Design3/Results.jpg" alt="6" data-aos="fade-up-left">
+                <img src="/Design3/Members.jpg" alt="7" data-aos="fade-up-right">
+                <img src="/Design3/References.jpg" alt="8" data-aos="fade-up-left">
+
+
+
+            </h1>
+            <h3 class="selfmade" data-aos="fade-up">All art and assets on this portfolio have been made/designed from scratch</h3>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 70,
+            easing: 'ease',
+            duration: 900,
+            delay: 50,
+            anchorPlacement: 'top-bottom'
+        });
+
+    </script>
+    <script type="text/javascript">
+        barba.init({
+                transitions: [{
+                    name: 'transition',
+                    enter(data) {
+                        return gsap.from(data.next.container, {
+                            opacity: 0, duration: 1
+                        });
+                    },
+                    leave(data) {
+                        return gsap.to(data.current.container, {
+                            opacity: 0, duration: 1
+                        });
+                    }
+                    
+                }]
+
+            });
+    </script>
+    
+
+</body>
+
+</html>
