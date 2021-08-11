@@ -334,6 +334,14 @@ li a {
   and (device-width: 360px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 4) {
+    .header{
+      width: 100%;}
+    .hero_area_1{
+      width: 100%;}
+    .hero_area_2{
+      width: 100%;}
+    .hero_area_3{
+      width: 100%;}
 
 }
 
@@ -344,6 +352,14 @@ li a {
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
+    .header{
+      width: 100%;}
+    .hero_area_1{
+      width: 100%;}
+    .hero_area_2{
+      width: 100%;}
+    .hero_area_3{
+      width: 100%;}
 
 }
 
@@ -354,5 +370,13 @@ li a {
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
+    .header{
+      width: 50%;}
+    .hero_area_1{
+      width: 50%;}
+    .hero_area_2{
+      width: 50%;}
+    .hero_area_3{
+      width: 50%;}
 
 }
