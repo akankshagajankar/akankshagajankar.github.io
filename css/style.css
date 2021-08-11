@@ -380,3 +380,27 @@ li a {
       width: 50%;}
 
 }
+
+@media screen and (max-width: 600px) {
+  .header {
+    width: 100%;}
+    .hero_area_1{
+      width: 100%;}
+    .hero_area_2{
+      width: 100%;}
+    .hero_area_3{
+      width: 100%;}
+  
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    width: 50%;
+  }
+  .hero_area_1{
+      width: 50%;}
+    .hero_area_2{
+      width: 50%;}
+    .hero_area_3{
+      width: 50%;}
+}
