@@ -320,16 +320,6 @@ li a {
   margin-left: 220px;
 }
 
-@media screen and (max-width: 480px) {
-  #site_wrap {
-   
-    background-color: black;
-    grid-template-areas:
-      "header header header header"
-      "hero_area_1 hero_area_1 hero_area_1 hero_area_1"
-      "hero_area_2 hero_area_2 hero_area_2 hero_area_2"
-      "hero_area_3 hero_area_3 hero_area_3 hero_area_3";
-  }
-}
+
 
 
