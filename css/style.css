@@ -23,6 +23,8 @@ body {
 }
 
 #site_wrap {
+ margin-inline:auto;
+  width:min(90%, 70.6em);
   display: grid;
 
   grid-template-columns:
@@ -320,7 +322,7 @@ li a {
 
 @media screen and (max-width: 480px) {
   #site_wrap {
-   width:15%;
+   
     background-color: black;
     grid-template-areas:
       "header header header header"
